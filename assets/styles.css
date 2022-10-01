@@ -6,22 +6,32 @@
     margin: 0;
 }
 
+body{
+    background-color: lightgray;
+}
+
 header{
-    padding: 5px;
     height: 100px;
+    width: cover;
     background-color: gray;
 }
 
-body{
-    background-color: lightgray;
-    margin: 2px;
+section{
+    float: right;
+    width: 66%;
+    position: relative;
 }
 
-section{
-    border-width: 5px;
+aside{
+    float: left;
+    width: 34%;
+}
+
+section, aside, footer{
+    margin: 2px 0;
+    border-width: 2px;
     border-color: black;
     border-style: solid;
-    margin: 5px;
 }
 
 header h1{
@@ -47,10 +57,9 @@ header nav ul li{
 
 }
 
-.about-me-anchor,
-.work-samples-anchor,
-.contact-anchor{
-    padding-top: 100px;
+.about-me img{
+    width: 200px;
+    height: 200px;
 }
 
 .project1 img{
@@ -61,6 +70,14 @@ header nav ul li{
     margin: 5px;
     max-height: 200px;
     display: block;
+}
+
+footer{
+    clear: both;
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+    background-color: grey;
 }
 
 @media screen and (max-width: 992px) {
