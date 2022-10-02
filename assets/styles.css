@@ -24,6 +24,11 @@ section, footer{
     border-style: solid;
 }
 
+section{
+    display: flex;
+    
+}
+
 header h1{
     font-size: 4rem;
 }
@@ -42,6 +47,13 @@ header h1{
     margin: 1.5rem;
 }
 
+.about-me{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .about-me img{
     height: 200px;
     width: auto;
@@ -50,9 +62,13 @@ header h1{
 .work-samples{
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
 }
 
 .project1 img{
+    flex: 2 1 100%;
     max-height: 400px;
 }
 
