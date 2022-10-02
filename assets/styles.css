@@ -7,59 +7,50 @@
 }
 
 body{
+    display: flex;
+    flex-direction: column;
     background-color: lightgray;
 }
 
 header{
     height: 100px;
-    width: cover;
     background-color: gray;
+    text-align: center;
 }
 
-section{
-    float: right;
-    width: 66%;
-    position: relative;
-}
-
-aside{
-    float: left;
-    width: 34%;
-}
-
-section, aside, footer{
-    margin: 2px 0;
-    border-width: 2px;
+section, footer{
+    display: inline-block;
+    border-width: 5px;
     border-color: black;
     border-style: solid;
 }
 
 header h1{
-    display: inline-block;
     font-size: 4rem;
 }
 
-header nav{
+.nav-links{
     display: flex;
-    float: right;
+    justify-content: center;
     padding-top: 1rem;
     margin-right: 1rem;
     font-size: 20px;
-}
-
-header nav ul{
     list-style-type: none;
 }
 
-header nav ul li{
+.nav-links ul li{
     display: inline-block;
     margin: 1.5rem;
-
 }
 
 .about-me img{
-    width: 200px;
     height: 200px;
+    width: auto;
+}
+
+.work-samples{
+    display: flex;
+    flex-flow: row wrap;
 }
 
 .project1 img{
@@ -68,12 +59,11 @@ header nav ul li{
 
 .project2 img, .project3 img, .project4 img, .project5 img, .project6 img{
     margin: 5px;
-    max-height: 200px;
-    display: block;
+    height: 200px;
+    width: auto;
 }
 
 footer{
-    clear: both;
     width: 100%;
     font-size: 2rem;
     text-align: center;
