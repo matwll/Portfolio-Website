@@ -10,6 +10,7 @@ body{
     display: flex;
     flex-direction: column;
     background-color: lightgray;
+    width: auto;
 }
 
 header{
@@ -61,26 +62,37 @@ header h1{
 
 .work-samples{
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px;
     align-items: center;
     text-align: center;
 }
 
-.project1 img{
-    flex: 2 1 100%;
-    max-height: 400px;
+.work-samples-img{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
 }
 
-.project2 img, .project3 img, .project4 img, .project5 img, .project6 img{
-    margin: 5px;
-    height: 200px;
-    width: auto;
-}
-
-.contact-me{
+.project2{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
 }
 
 footer{
@@ -95,9 +107,24 @@ footer{
 }
 
 @media screen and (max-width: 768px) {
-    
+    header h1{
+        font-size: 3.5em;
+    }
+    .about-me{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
 }
 
 @media screen and (max-width: 576px) {
-    
+    header{
+        height: 130px;
+        background-color: gray;
+        text-align: center;
+    }
+    header h1{
+        font-size: 3.5rem;
+    }
 }
