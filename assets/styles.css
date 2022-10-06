@@ -56,6 +56,11 @@ header h1{
     padding: 10px;
 }
 
+.about-me p{
+    justify-content: center;
+    width: 50%;
+}
+
 .about-me img{
     height: 200px;
     width: 150px;
@@ -126,6 +131,10 @@ footer{
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
+    }
+    .about-me p{
+        justify-content: flex-end;
+        width: 90%;
     }
     .project2{
         flex-direction: row;
