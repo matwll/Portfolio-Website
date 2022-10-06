@@ -76,6 +76,9 @@ header h1{
     justify-content: space-around;
     flex-flow: row wrap;
 }
+.project1{
+    width: 80%;
+}
 /* adjusts the sizes and layout of the projects excluding the main (larger) one */
 .project2{
     flex-direction: row;
@@ -83,7 +86,7 @@ header h1{
     text-align: center;
     padding: 5px;
     height: auto;
-    width: 50%;
+    width: 40%;
 }
 
 .contact{
@@ -130,7 +133,7 @@ footer{
         text-align: center;
         padding: 5px;
         height: auto;
-        width: 100%;
+        width: 80%;
     }
 }
 
