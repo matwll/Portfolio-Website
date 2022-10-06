@@ -12,13 +12,13 @@ body{
     background-color: lightgray;
     width: auto;
 }
-
+/* makes the header area taller with a grey background color, and text centered */
 header{
     height: 100px;
     background-color: gray;
     text-align: center;
 }
-
+/* gives all sections of the page (except header) a solid black border box. I might remove this later */
 section, footer{
     border-width: 5px;
     border-color: black;
@@ -33,7 +33,7 @@ section{
 header h1{
     font-size: 4rem;
 }
-
+/* makes the nav bar centered under the header with a slightly larger font and no bullet points */
 .nav-links{
     display: flex;
     justify-content: center;
@@ -76,7 +76,7 @@ header h1{
     justify-content: space-around;
     flex-flow: row wrap;
 }
-
+/* adjusts the sizes and layout of the projects excluding the main (larger) one */
 .project2{
     flex-direction: row;
     justify-content: center;
@@ -91,7 +91,7 @@ header h1{
     flex-direction: column;
     padding: 10px;
 }
-
+/* fixes the form to apear in a column instead of row and the box width to be the same size as the form */
 .contact-form{
     display: flex;
     flex-direction: column;
@@ -104,7 +104,7 @@ footer{
     text-align: center;
     background-color: grey;
 }
-
+/* The code below this line is to make the webpage responsive on different screen sizes */
 @media screen and (max-width: 992px) {
     .project2{
         display: flex;
