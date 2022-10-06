@@ -143,4 +143,7 @@ footer{
     header h1{
         font-size: 3.5rem;
     }
+    .nav-links ul li{
+        margin: 1rem;
+    }
 }
