@@ -7,6 +7,7 @@ It showcases a few projects I have made as well as providing links to those proj
 This project solves my problem of having to print out and carry around samples of my work for potential employers.
 While making this I learned alot about flexbox, divs, and mediaqueries.
 
+<img src="./assets/images/portoflio-screenshot.png" alt="Portfolio-Screenshot">
 
 ## Installation
 
