@@ -15,7 +15,7 @@ body{
 /* makes the header area taller with a grey background color, and text centered */
 header{
     height: 100px;
-    background-color: gray;
+    background-color: black;
     text-align: center;
 }
 /* gives all sections of the page (except header) a solid black border box. I might remove this later */
@@ -32,6 +32,9 @@ section{
 
 header h1{
     font-size: 4rem;
+    background: linear-gradient(to right, rgb(150, 3, 3), rgb(151, 151, 151));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 /* makes the nav bar centered under the header with a slightly larger font and no bullet points */
 .nav-links{
@@ -108,9 +111,15 @@ header h1{
 
 footer{
     width: 100%;
-    font-size: 2rem;
     text-align: center;
-    background-color: grey;
+    background-color: black;
+}
+
+footer h2{
+    font-size: 2rem;
+    background: linear-gradient(to right, rgb(82, 4, 4), white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 /* The code below this line is to make the webpage responsive on different screen sizes */
 @media screen and (max-width: 992px) {
