@@ -32,7 +32,7 @@ section{
 
 header h1{
     font-size: 4rem;
-    background: linear-gradient(to right, rgb(150, 3, 3), rgb(151, 151, 151));
+    background: linear-gradient(to right, rgb(150, 3, 3), white);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
