@@ -1,106 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./assets/styles.css" />
     <title>Matt's Portfolio</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- header with the nav links in a div for seperate styling -->
     <header>
-        <h1>Matthew Williams</h1>
+      <h1>Matthew Williams</h1>
     </header>
 
     <div class="nav-links">
-        <nav>
-            <ul>
-                <li>
-                    <a href="#about-me-anchor">About Me</a>
-                </li>
-                <li>
-                    <a href="#work-samples-anchor">Work Samples</a>
-                </li>
-                <li>
-                    <a href="#contact-anchor">Contact Me</a>
-                </li>
-            </ul>
-        </nav>
+      <nav>
+        <ul>
+          <li>
+            <a href="#about-me-anchor">About Me</a>
+          </li>
+          <li>
+            <a href="#work-samples-anchor">Work Samples</a>
+          </li>
+          <li>
+            <a href="#contact-anchor">Contact Me</a>
+          </li>
+        </ul>
+      </nav>
     </div>
 
     <!-- the about me section with a picture -->
-        <section id="about-me-anchor" class="about-me">
-            <h2>About Me</h2>
-            <img src="./assets/images/doggos.jpg" alt="placeholder image">
-            <p>Welcome to my Online Portfolio. I moved to Washington about 5 years ago since i love the cooler weather and rain. Currently
-                I work at PPG as a Production Planner. I have 2 dog's (Addie and Aiden) who are 9 years old. When possible I will do work
-                on my car. My girlfriend likes finding any excuse possible for us to take the dogs out somewhere. I am new to web devloperment. 
-                I am currently working with HTML, CSS, and Javascript, and I am working on Python on the side. I really like the concept of 
-                machine learning. Although it requires alot more advanced math that I need to learn first.
-            </p>
-        </section>
+    <div class="container-fluid mt-2 mb-2">
+      <div
+        class="row about-me d-flex justify-content-space-around"
+        id="about-me-anchor"
+      >
+        <h2
+          class="col-sm-3 d-flex justify-content-center justify-content-sm-end align-self-center"
+        >
+          About Me
+        </h2>
+        <img
+          src="./assets/images/doggos.jpg"
+          alt="placeholder image"
+          class="col-sm-2 rounded-circle w-50 p-3"
+        />
+        <p class="col-sm-6 align-self-center">
+          Welcome to my Web Devlopment Portfolio. I moved to Washington about 5
+          years ago since i love the cooler weather and rain. Currently I work
+          at PPG as a Production Planner. I have 2 dog's (Addie and Aiden) who
+          are 9 years old. My girlfriend likes finding any reason for us to take
+          the dogs out somewhere. When possible I will do some work on my car. I
+          am new to web devloperment. I am currently working with HTML, CSS, and
+          Javascript, and I am working on Python on the side. I really like the
+          concept of machine learning. Although it requires alot more advanced
+          math that I need to learn first.
+        </p>
+      </div>
+    </div>
 
     <!-- project links with snapshots of the project -->
     <section id="work-samples-anchor" class="work-samples">
-        <h2>My Projects</h2>
-        <div class="work-samples-img">
-            <figure class="project1">
-                <figcaption>Meet Brewery</figcaption>
-                <a href="https://matwll.github.io/nearby-breweries/" target="_blank">
-                    <img src="./assets/images/brewery-search-screenshot.png" alt="Meet Brewery Search" width="100%">
-                </a>
-            </figure>
-            <figure class="project2">
-                <figcaption>Business Day Event Planner</figcaption>
-                <a href="https://matwll.github.io/business-day-planner/" target="_blank">
-                    <img src="./assets/images/business-day-planner.png" alt="Business Day Event Planner" width="100%">
-                </a>
-            </figure>
-            <figure class="project2">
-                <figcaption>Coding Quiz</figcaption>
-                <a href="https://matwll.github.io/timed-coding-quiz/" target="_blank">
-                    <img src="./assets/images/timed-quiz-screenshot.png" alt="Timed Coding Quiz" width="100%">
-                </a>
-            </figure>
-            <figure class="project2">
-                <figcaption>Password Generator</figcaption>
-                <a href="https://matwll.github.io/secure-password-generator/" target="_blank">
-                    <img src="./assets/images/Screenshot Password Generator.png" alt="Password Generator" width="100%">
-                </a>
-            </figure>
-            <figure class="project2">
-                <figcaption>Weather Dashboard</figcaption>
-                <a href="https://matwll.github.io/weather-search-dashboard/" target="_blank">
-                    <img src="./assets/images/weather-dashboard.png" alt="Weather Search Dashboard" width="100%">
-                </a>
-            </figure> 
-        </div>
+      <h2>My Projects</h2>
+      <div class="work-samples-img">
+        <figure class="project1">
+          <figcaption>Meet Brewery</figcaption>
+          <a href="https://matwll.github.io/nearby-breweries/" target="_blank">
+            <img
+              src="./assets/images/brewery-search-screenshot.png"
+              alt="Meet Brewery Search"
+              width="100%"
+            />
+          </a>
+        </figure>
+        <figure class="project2">
+          <figcaption>Business Day Event Planner</figcaption>
+          <a
+            href="https://matwll.github.io/business-day-planner/"
+            target="_blank"
+          >
+            <img
+              src="./assets/images/business-day-planner.png"
+              alt="Business Day Event Planner"
+              width="100%"
+            />
+          </a>
+        </figure>
+        <figure class="project2">
+          <figcaption>Coding Quiz</figcaption>
+          <a href="https://matwll.github.io/timed-coding-quiz/" target="_blank">
+            <img
+              src="./assets/images/timed-quiz-screenshot.png"
+              alt="Timed Coding Quiz"
+              width="100%"
+            />
+          </a>
+        </figure>
+        <figure class="project2">
+          <figcaption>Password Generator</figcaption>
+          <a
+            href="https://matwll.github.io/secure-password-generator/"
+            target="_blank"
+          >
+            <img
+              src="./assets/images/Screenshot Password Generator.png"
+              alt="Password Generator"
+              width="100%"
+            />
+          </a>
+        </figure>
+        <figure class="project2">
+          <figcaption>Weather Dashboard</figcaption>
+          <a
+            href="https://matwll.github.io/weather-search-dashboard/"
+            target="_blank"
+          >
+            <img
+              src="./assets/images/weather-dashboard.png"
+              alt="Weather Search Dashboard"
+              width="100%"
+            />
+          </a>
+        </figure>
+      </div>
     </section>
 
     <!-- contact form. currently doesn't submit due to only having CSS and HTML -->
     <section id="contact-anchor" class="contact">
-        <h2>Contact Me</h2>
-        <form action="submit" class="contact-form">
-            <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your first name...">
-            
-            <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lastname" placeholder="Your last name...">
-            
-            <label for="email">Email Adress</label>
-            <input type="email" id="email" name="email" placeholder="johnsmith@gmail.com">
+      <h2>Contact Me</h2>
+      <form action="submit" class="contact-form">
+        <label for="fname">First Name</label>
+        <input
+          type="text"
+          id="fname"
+          name="firstname"
+          placeholder="Your first name..."
+        />
 
-            <input type="submit" value="Submit">
-        </form>
+        <label for="lname">Last Name</label>
+        <input
+          type="text"
+          id="lname"
+          name="lastname"
+          placeholder="Your last name..."
+        />
+
+        <label for="email">Email Adress</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="johnsmith@gmail.com"
+        />
+
+        <input type="submit" value="Submit" />
+      </form>
     </section>
-    
+
     <footer>
-        <h2>Thanks for stopping by my Portfolio</h2>
+      <h2>Thanks for stopping by my Portfolio</h2>
+      <a href="https://github.com/matwll" target="_blank"
+        >Click Here to find me on github</a
+      >
     </footer>
 
     <!-- My Javascript code being linked to the webpage. Currently the javascript is empty. -->
     <script src="./assets/apps.js"></script>
-</body>
+  </body>
 </html>
