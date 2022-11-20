@@ -24,11 +24,6 @@ header{
     text-align: center;
 }
 /* gives all sections of the page (except header) a solid black border box. I might remove this later */
-section, footer{
-    border-width: 5px;
-    border-color: black;
-    border-style: solid;
-}
 
 section{
     display: flex;
